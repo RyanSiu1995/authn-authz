@@ -1,0 +1,14 @@
+digraph {
+	AuthZ [label="Authorization Protocol",shape=box]
+	AuthN [label="Authentication Protocol",shape=box]
+	OpenID
+	OAuth
+	PAP [label="Password Authentication"]
+
+	OpenID -> AuthN
+	SAML -> AuthN
+	PAP -> AuthN
+
+	OAuth -> AuthZ
+	SAML -> AuthZ
+}
